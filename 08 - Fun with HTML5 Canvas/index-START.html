@@ -34,7 +34,7 @@
       function draw(e) {
         if (!isDrawing) return;
         context.strokeStyle = `hsl(${hue}, 100%, 50%)`;
-       
+
         context.beginPath();
         context.moveTo(lastX, lastY);
         context.lineTo(e.offsetX, e.offsetY);
@@ -42,9 +42,9 @@
 
         [lastX, lastY] = [e.offsetX, e.offsetY];
 
-        if(hue >= 360){
+        if (hue >= 360) {
           hue = 0;
-        }else{
+        } else {
           hue++;
         }
 
