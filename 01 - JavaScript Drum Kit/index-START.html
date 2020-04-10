@@ -74,6 +74,7 @@
 
       function removeTransition(e) {
         if (e.propertyName !== "transform") return;
+        // this here refer to the element from which the event is fired from.
         this.classList.remove("playing");
       }
 
